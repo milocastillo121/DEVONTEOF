@@ -12,6 +12,7 @@
 
 body {
   font-family: 'Jost', sans-serif;
+  background-color: #575757;
 }
 
 header {
@@ -145,6 +146,22 @@ nav {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .mediabtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .fa-bars {
+    left: 25px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-left: 50px;
@@ -179,5 +196,308 @@ nav {
   .bannertext h2 {
     font-size: 20px;
   }
+}
+
+/*INFORMATION*/
+.container {
+  color: white;
+  border-radius: 7px;
+}
+
+.infos {
+  text-align: center;
+}
+
+.prf {
+  text-align: center;
+  font-size: 17px;
+}
+
+/*IMAGE MINI GALERY*/
+.rounded {
+  width: 30%;
+}
+
+/*CARROUSEL*/
+/*FOOTER*/
+.card {
+  background-color: #575757;
+  color: white;
+}
+
+.box {
+  background-color: #2e2e2e;
+}
+
+.btnf {
+  margin-right: 40px;
+  padding: 10px 30px;
+  background-color: #6f9b6f;
+  color: white;
+  border-radius: 5px;
+}
+
+.btnf:hover {
+  background-color: #575757;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+/*CSS FOR CLOTHING PAGE*/
+/*CLOTHING PRODUCTS*/
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card1 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/sisa.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card2 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/tropelera.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card3 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/camiseta.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card4 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/camibuso.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card5 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/termo.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card6 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/pantaloneta.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card7 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/oversize.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card8 {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  color: #575757;
+  background: url(/media/gorra.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.card__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #2e2e2e;
+  border-top-left-radius: 20px;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s;
+}
+
+.card__content::before {
+  content: '';
+  position: absolute;
+  top: -47px;
+  right: -45px;
+  width: 100px;
+  height: 100px;
+  -webkit-transform: rotate(-175deg);
+          transform: rotate(-175deg);
+  border-radius: 50%;
+  -webkit-box-shadow: inset 48px 48px  #2e2e2e;
+          box-shadow: inset 48px 48px  #2e2e2e;
+}
+
+.card__title {
+  color: white;
+  line-height: 15px;
+  font-size: 27px;
+}
+
+.card_subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #6f9b6f;
+}
+
+.card__description {
+  font-size: 14px;
+  opacity: 0;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  color: white;
+}
+
+.card1:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card1:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card2:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card2:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card3:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card3:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card4:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card4:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card5:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card5:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card6:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card6:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card7:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card7:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.card8:hover .card__content {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.card8:hover .card__description {
+  opacity: 1;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+/*CSS FOR ABOUT US PAGE*/
+/*ACCORDION*/
+.accordion {
+  margin: 20px;
+  padding: 20px;
+}
+
+.accordion-item {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: justify;
+}
+
+.accordion-button {
+  background-color: #575757;
+  color: white;
 }
 /*# sourceMappingURL=sass.css.map */
