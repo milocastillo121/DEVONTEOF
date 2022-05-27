@@ -1,1 +1,0 @@
-# sass2seo

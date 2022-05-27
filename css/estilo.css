@@ -1,0 +1,135 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Marcellus', serif;
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+  }
+
+
+/*HEADER*/
+.navbar{
+    background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
+}
+
+.navbar-brand{
+    color: rgb(255, 255, 255);
+}
+
+.nav-link{
+    color: white;
+}
+
+
+.nav-link:hover{
+    background-color: #d53871;
+    color: white;
+    border-radius: 9px ;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/media/pavo.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+
+  
+  /*BANNER TEXT*/
+  .bannertext {
+    margin: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+  }
+  
+  .bannertext h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  .bannertext span {
+    color: #ca1661;
+  }
+  
+  .bannertext h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .button1, .button2 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color:#d53871;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  
+  .button1:hover, .button2:hover {
+    background-color: #ff893f;
+    color: white;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+
+  /*TEXTS*/
+  .container{
+      background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+      border-radius: 9px;
+  }
+
+  .col{
+      margin: 10px;
+  }
+
+
+  /*IMAGENES*/
+  .flamenco{
+      width: 31%;
+      padding: 5px;
+      border-radius: 11px;
+  }
+
+  .flamenco:hover{
+    background-color:#d53871;
+    border-radius: 9px ;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-width: 15px;
+  }
+
+
+  /*FOOTER*/
+  .card-header{
+    background-color:#ca1661;
+    color: white;
+  }
+
+  .card{
+    background-image: linear-gradient(315deg, #f9d29d 0%, #ffd8cb 74%);
+  }
+
+.btn{
+    background-color: #d53871;
+}
+
+.btn:hover{
+    background-color: #ff893f;
+    color: white;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
