@@ -4,6 +4,7 @@ $signaturegreen: rgb(111, 155, 111);
 $signatureblack: rgb(0, 0, 0);
 $signaturegray: rgb(87, 87, 87);
 $signaturewhite: rgb(255, 255, 255);
+$signatureplomo: #2e2e2e;
 
 @mixin button {
   padding: 10px 30px;
@@ -67,22 +68,22 @@ nav {
 }
 
 .navmenu {
-  right: -500px;
-
-  position: fixed;
+  display: flex;
+  justify-content: end;
+  position: sticky;
   width: 100%;
   height: 0vh;
   top: 100px;
   background: $signatureblack;
   transition: all 0.5s;
   opacity: 0.9;
+  margin: 30px;
 }
 
 .navmenu li {
-
   display: none;
   line-height: 30px;
-  margin: 0 0;
+  margin: 10px 10px;
   transition: all 0.5s;
 }
 
@@ -218,7 +219,6 @@ nav {
   width: 30%;
 }
 
-/*CARROUSEL*/
 
 /*FOOTER*/
 .card {
@@ -457,8 +457,24 @@ nav {
   transition-delay: 0.25s;
 }
 
-/*CSS FOR ABOUT US PAGE*/
+@media screen and (max-width: 600px){
+  .order{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .container{
+    text-align: justify;
+    align-items: center;
+  }
+
+  .infos{
+    color: $signaturegreen;
+  }
+}
+
+/*CSS FOR ABOUT US PAGE*/
 /*ACCORDION*/
 .accordion {
   margin: 20px;
@@ -483,4 +499,128 @@ nav {
 
 .accordion-button:not(.collapsed) {
   color: $signaturegreen;
+}
+
+
+/*CSS FOR TEAM PAGE*/
+/*TEAM CARDS*/
+.gridcard{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  
+}
+
+.teamcard{
+  align-items: center;
+  width: 30rem;
+  /*background-color: $signatureplomo;*/
+  color: $signaturewhite;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+
+.cardpic{
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+.cardinformationtitle{
+  font-size: 27px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px){
+  .gridcard{
+    grid-template-columns: auto;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/*CSS FOR CONTACT PAGE*/
+/*INFORMATION*/
+.icontainer{
+  background-color:$signaturegreen;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 9px;
+  align-items: center;
+  text-align: center;
+  color: $signaturewhite;
+}
+
+
+/*FORMULARIO*/
+#caja-comentarios{
+  padding: 20px 0px 50px 0px;
+}
+
+form{
+  width: 80%;
+  margin: auto;
+  background: $signatureplomo;
+  padding: 15px 15px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+.text-center{
+  color: $signaturewhite;
+  text-align: center;
+  background-color: $signatureplomo;
+}
+
+form h4{
+  color: $signaturewhite;
+  padding: 35px;
+  font-size: 28px;
+}
+
+input, textarea{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  border: none;
+  box-shadow: 0px 0px 5px $signatureblack;
+  font-family: "Jost", sans-serif;
+  border-radius: 7px;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+#boton{
+  font-weight:600 ;
+  background-color:$signaturegreen;
+  border: 1px solid $signaturegray;
+  color: $signaturewhite;
+  padding: 20px;
+  box-shadow: 0px 0px 5px $signatureblack;
+}
+#boton:hover{
+  cursor: pointer;
+  background-color: $signaturegray;
+  transition: all 0.4s;
+  color: $signatureblack;
+  transform: scale(0.9);
+}
+
+
+@media (min-width: 600px){
+  form{
+      max-width: 900px;
+  }
+
+  .text-center{
+    color: $signaturegreen;
+  }
+
 }
