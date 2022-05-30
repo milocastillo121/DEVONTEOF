@@ -1,131 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="icon" type="image/x-icon" href="/media/favicon.ico"/>
-    <title>DEVONTE</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico" />
+        <title>DEVONTE</title>
 
-    <!--BOOTSTRAP LINK-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../sass.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <!--NAVIGATION MENU-->
-      <nav class>
-        <div>
-          <img class="logo" src="/media/blanco.png" alt="" />
+        <!--BOOTSTRAP LINK-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="../sass.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <!--NAVIGATION MENU-->
+            <nav class>
+                <div>
+                    <img class="logo" src="../media/blanco.png" alt="" />
+                </div>
+                <input type="checkbox" id="check" />
+                <label for="check" class="bar-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+                <ul class="navmenu">
+                    <li><a class="active" href="../index.html">Home</a></li>
+                    <li><a href="./clothing.html">Clothing</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--BANNER-->
+            <div class="bannertext">
+                <h2>OUR TEAM</h2>
+                <h1>NUESTROS <span>GUARDIANES</span> <span>DEVONTE</span></h1>
+                <div>
+                    <a
+                        href="https://www.instagram.com/devontecol/"
+                        class="button1"
+                        >EXPLORE</a
+                    >
+                    <a
+                        href="https://www.instagram.com/devontecol/"
+                        class="button2"
+                        >ORDER NOW</a
+                    >
+                </div>
+            </div>
+        </header>
+        <br />
+
+        <!--TEAM CARDS-->
+        <div class="gridcard">
+            <article class="teamcard">
+                <img
+                    src="../media/jcdos.jpg"
+                    alt="juan entrenando"
+                    class="cardpic"
+                />
+                <div class="cardinformationtitle">
+                    <h2 class="cardinformationtitle">JUAN CADAVID</h2>
+                </div>
+            </article>
+
+            <article class="teamcard">
+                <img
+                    src="../media/ktdos.jpg"
+                    alt="juan entrenando"
+                    class="cardpic"
+                />
+                <div class="cardinformationtitle">
+                    <h2 class="cardinformationtitle">KATHERINE NOREÑA</h2>
+                </div>
+            </article>
+
+            <article class="teamcard">
+                <img
+                    src="../media/dydos.jpg"
+                    alt="juan entrenando"
+                    class="cardpic"
+                />
+                <div class="cardinformationtitle">
+                    <h2 class="cardinformationtitle">DIEGO YEPES</h2>
+                </div>
+            </article>
+
+            <article class="teamcard">
+                <img
+                    src="../media/stdos.jpg"
+                    alt="juan entrenando"
+                    class="cardpic"
+                />
+                <div class="cardinformationtitle">
+                    <h2 class="cardinformationtitle">STIWAR RAMIREZ</h2>
+                </div>
+            </article>
         </div>
-        <input type="checkbox" id="check" />
-        <label for="check" class="bar-btn">
-          <i class="fa fa-bars"></i>
-        </label>
-        <ul class="navmenu">
-          <li><a class="active" href="../index.html">Home</a></li>
-          <li><a href="./clothing.html">Clothing</a></li>
-          <li><a href="./aboutus.html">About Us</a></li>
-          <li><a href="./team.html">Team</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
+        <br />
 
-      <!--BANNER-->
-      <div class="bannertext">
-        <h2>OUR TEAM</h2>
-        <h1>NUESTROS <span>GUARDIANES</span> <span>DEVONTE</span></h1>
-        <div>
-          <a href="https://www.instagram.com/devontecol/" class="button1">EXPLORE</a>
-          <a href="https://www.instagram.com/devontecol/" class="button2">ORDER NOW</a>
-        </div>
-      </div>
-    </header>
-    <br>
+        <!--FOOTER-->
+        <footer>
+            <div class="card text-center">
+                <div class="card-header">
+                    Web developing course, provided by CoderHouse
+                </div>
+                <div class="box card-body">
+                    <h5 class="card-title">Made by Camilo H. Castillo</h5>
+                    <p class="card-text">
+                        Graphic designer, marketing master and web developer
+                        from CoderHouse
+                    </p>
+                    <a
+                        href="https://www.instagram.com/camilohcastillov/"
+                        class="btnf btn-primary"
+                        >My Instagram</a
+                    >
+                </div>
+                <div class="card-footer text-center">
+                    © Copyright 2022 Camilo H. Castillo all rights reserved ©
+                </div>
+            </div>
+        </footer>
 
-    <!--TEAM CARDS-->
-    <div class="gridcard">
-    <article class="teamcard">
-      <img src="/media/jcdos.jpg" alt="juan entrenando" class="cardpic">
-      <div class="cardinformation">
-        <h2 class="cardinformationtitle">JUAN CADAVID</h2>
-        
-      </div>
-    </article>
-
-    <article class="teamcard">
-      <img src="/media/ktdos.jpg" alt="juan entrenando" class="cardpic">
-      <div class="cardinformation">
-        <h2 class="cardinformationtitle">KATHERINE NOREÑA</h2>
-        
-      </div>
-    </article>
-
-    <article class="teamcard">
-      <img src="/media/dydos.jpg" alt="juan entrenando" class="cardpic">
-      <div class="cardinformation">
-        <h2 class="cardinformationtitle">DIEGO YEPES</h2>
-        
-      </div>
-    </article>
-
-    <article class="teamcard">
-      <img src="/media/stdos.jpg" alt="juan entrenando" class="cardpic">
-      <div class="cardinformation">
-        <h2 class="cardinformationtitle">STIWAR RAMIREZ</h2>
-        
-      </div>
-    </article>
-    </div>
-    <br>
-
-  
-
-
-    <!--FOOTER-->
-    <footer>
-      <div class="card text-center">
-        <div class="card-header">
-          Web developing course, provided by CoderHouse
-        </div>
-        <div class="box card-body">
-          <h5 class="card-title">Made by Camilo H. Castillo</h5>
-          <p class="card-text">
-            Graphic designer, marketing master and web developer from CoderHouse
-          </p>
-          <a
-            href="https://www.instagram.com/camilohcastillov/"
-            class="btnf btn-primary"
-            >My Instagram</a
-          >
-        </div>
-        <div class="card-footer text-center">
-          © Copyright 2022 Camilo H. Castillo all rights reserved ©
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- BOOTSTRAP SCRIPT -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <!-- BOOTSTRAP SCRIPT -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
